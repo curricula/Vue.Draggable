@@ -223,7 +223,7 @@ const draggableComponent = {
       }
     });
     !("draggable" in options) && (options.draggable = ">*");
-    this._sortable = new Sortable(this.rootContainer, options);
+    this._sortable = new Sortable.default.create(this.rootContainer, options);
     this.computeIndexes();
   },
 
